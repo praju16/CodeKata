@@ -3,30 +3,21 @@
 // HighAndLow("1 2 -3 4 5") // return "5 -3"
 // HighAndLow("1 9 3 4 -5") // return "9 -5"
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Kata {
   public static String HighAndLow(String numbers) {
     // Code here or
-    int min=32000,max=-32000,val;
-    String[] elements = numbers.split(" ");
-    String maximum = elements[0], minimum=elements[0];
+    String[] array = numbers.split(" ");
+    List<Integer> nums = new ArrayList<>();
     
-    for(String num: elements)
-    {
-      val = Integer.parseInt(num);
-      if(val < min) 
-      {
-         min = val;
-         minimum = num;
-      }
-      if(val > max)
-      {
-        max = val;
-        maximum = num;
-      }
-      
+    for(String i : array){
+      nums.add(Integer.parseInt(i));
     }
     
-    return maximum + " " + minimum;
+    return Collections.max(nums) + " " + Collections.min(nums);
   }
   
 }
