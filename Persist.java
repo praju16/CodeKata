@@ -8,6 +8,8 @@
 //                        // 1*2*6 = 12, and finally 1*2 = 2
 
 // persistence(4) == 0 // because 4 is already a one-digit number
+
+// Code begins here
 class Persist {
   public static int persistence(long n) {
     // your code
