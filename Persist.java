@@ -9,7 +9,7 @@
 
 // persistence(4) == 0 // because 4 is already a one-digit number
 
-// Code begins here
+//  
 class Persist {
   public static int persistence(long n) {
     // your code
