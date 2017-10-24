@@ -4,6 +4,7 @@
 // Easy case is when the list is made up of only positive numbers and the maximum sum is the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.
 
 // Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
+//  4 day streak
 public class Max {
   public static int sequence(int[] arr) {
     int sum=0,high=0;
